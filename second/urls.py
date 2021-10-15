@@ -12,5 +12,5 @@ urlpatterns = [
     path('setsession', views.setSession, name='setsession'),    
     path('getsession', views.getSession, name='getsession'),
     path('delsession', views.deleteSession, name='deletesession'),
-    
+    path('flushSession', views.flushSession, name='flushSession')
 ]

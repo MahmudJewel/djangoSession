@@ -23,3 +23,11 @@ def deleteSession(request):
 		'nm':nm,
 	}
 	return render(request,'delSession.html',context)
+
+def flushSession(request):
+	nm=request.session.get('name')
+	request.session.flush()
+	context={
+		'nm':nm,
+	}
+	return render(request,'flushSession.html',context)
